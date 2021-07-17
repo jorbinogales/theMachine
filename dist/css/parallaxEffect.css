@@ -91,7 +91,7 @@
   background-size: cover;
   background-position: top center;
   background-repeat: repeat-x !important;
-  bottom: 0;
+  bottom: -50px;
 }
 
 #city-1.city-day {
@@ -118,9 +118,16 @@
   background-image: url("../svg/city1Night.svg");
 }
 
+@media only screen and (min-width: 468px) {
+  .city {
+    bottom: 0px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   #topSections {
     height: 100vh;
+    max-height: 800px;
   }
 
   #topSections #logo {
