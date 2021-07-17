@@ -1,0 +1,17 @@
+{
+  "name": "themachine",
+  "version": "1.0.0",
+  "description": "the page for machine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "machine",
+    "keywords",
+    "maquina",
+    "pajaros"
+  ],
+  "author": "Jorbi Nogales",
+  "license": "ISC"
+}

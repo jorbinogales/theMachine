@@ -1,0 +1,64 @@
+:root {
+  --bg-day: #ffde56;
+  --bg-day-strong: #ffce02;
+  --bg-dark: #333333;
+  --bg-night: #6666ff;
+  --bg-gray: #35393f;
+  --bg-white: #ffffff;
+}
+
+body {
+  z-index: 1;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: var(--bg-dark) !important;
+}
+
+.sun-theme.sun-border {
+  border-top: 20px solid var(--bg-day);
+}
+
+.night-theme.night-border {
+  border-top: 20px solid var(--bg-night);
+}
+
+button {
+  border: none;
+  text-align: center;
+  display: block;
+  width: 100%;
+  outline: none;
+}
+
+button span {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.btn-day {
+  color: var(--bg-dark);
+  background-color: var(--bg-day);
+}
+
+.btn-night {
+  color: white !important;
+  background-color: var(--bg-night);
+}
+
+.btn-gray {
+  background-color: var(--bg-gray) !important;
+  color: white !important;
+}
+
+.text-day {
+  color: var(--bg-day-strong);
+}
+
+.text-night {
+  color: var(--bg-night);
+}
+
+.text-white {
+  color: var(--bg-white);
+}

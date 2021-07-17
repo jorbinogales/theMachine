@@ -1,0 +1,143 @@
+#topSections {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  z-index: 100;
+}
+
+#topSections .footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: block;
+  z-index: 150;
+}
+
+#topSections .footer h1 {
+  display: block;
+  margin: auto;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+#topSections .footer .lordIcon {
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+#topSections #logo {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  right: 0px;
+  display: block;
+  margin: auto;
+  max-width: 250px;
+  height: auto;
+  min-height: 100px;
+  z-index: 150;
+  background-image: url("../img/la-maquina-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#topSections #logo.logo-night {
+  opacity: 0;
+  animation: logo 1s ease-in-out forwards;
+}
+
+@keyframes logo {
+  0% {
+    top: 100px;
+    opacity: 1;
+    z-index: 0;
+  }
+  50% {
+    top: 500px;
+    opacity: 0;
+    background-image: url("../img/la-maquina-logo-night.svg");
+    z-index: 0;
+  }
+  100% {
+    top: 100px;
+    opacity: 1;
+    background-image: url("../img/la-maquina-logo-night.svg");
+  }
+}
+
+#topSections .background {
+  width: 100%;
+  height: 70vh;
+  display: block;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.city {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  left: 0;
+  z-index: 4;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: repeat-x !important;
+  bottom: 0;
+}
+
+#city-1.city-day {
+  background-image: url("../svg/city1.svg");
+  height: 250px;
+}
+
+#city-1.city-night {
+  background-image: url("../svg/city1Night.svg");
+  height: 250px;
+}
+
+#city-2 {
+  background-image: url("../svg/city2.svg");
+  z-index: 100;
+}
+
+#city-3.city-day {
+  background-image: url("../svg/city1.svg");
+  bottom: 20px;
+}
+
+#city-3.city-night {
+  background-image: url("../svg/city1Night.svg");
+}
+
+@media only screen and (min-width: 768px) {
+  #topSections {
+    height: 100vh;
+  }
+
+  #topSections #logo {
+    max-width: 500px;
+  }
+
+  .city {
+    height: 400px;
+  }
+
+  #city-1.city-day {
+    bottom: 0;
+    height: 550px;
+  }
+
+  #city-3.city-day {
+    bottom: 0;
+    height: 550px;
+  }
+}
